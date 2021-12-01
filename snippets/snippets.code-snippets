@@ -1,0 +1,13 @@
+{
+    "Flutter Repository Template": {
+        "prefix": "!repo",
+        "body": [
+            "class ${1:Repository} extends BaseRepository{",
+            "${1:Repository}._privateConstructor();",
+            "static final ${1:Repository} _instance = ${1:Repository}._privateConstructor();",
+            "factory ${1:Repository}() {",
+            "return _instance;",
+            "}",
+        ]
+    }
+}
