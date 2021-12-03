@@ -10,5 +10,70 @@
             "}",
             "}",
         ]
+    },
+    "Provider Post Req Template": {
+        "prefix": "!postreqprovider",
+        "body": [
+            "Future<$1> functionName(){",
+            "try{",
+            "Response<$1> response = await post<$1>('endpoint',body);",
+            "}",
+            "catch(e){",
+            " throw (AtException(e));",
+            "}",
+            "}"
+        ]
+    },
+    "Provider Get Req Template": {
+        "prefix": "!getreqprovider",
+        "body": [
+            "Future<$1> functionName(){",
+            "try{",
+            "Response<$1> response = await get<$1>('endpoint');",
+            "}",
+            "catch(e){",
+            " throw (AtException(e));",
+            "}",
+            "}"
+        ]
+    },
+    "Provider Put Req Template": {
+        "prefix": "!putreqprovider",
+        "body": [
+            "Future<$1> functionName(){",
+            "try{",
+            "Response<$1> response = await put<$1>('endpoint',body);",
+            "}",
+            "catch(e){",
+            " throw (AtException(e));",
+            "}",
+            "}"
+        ]
+    },
+    "Provider Patch Req Template": {
+        "prefix": "!patchreqprovider",
+        "body": [
+            "Future<$1> functionName(){",
+            "try{",
+            "Response<$1> response = await patch<$1>('endpoint',body);",
+            "}",
+            "catch(e){",
+            " throw (AtException(e));",
+            "}",
+            "}"
+        ]
+    },
+    "Provider Delete Req Template": {
+        "prefix": "!delreqprovider",
+        "body": [
+            "Future<$1> functionName(){",
+            "try{",
+            "Response<$1> response = await delete<$1>('endpoint',body);",
+            "}",
+            "catch(e){",
+            " throw (AtException(e));",
+            "}",
+            "}"
+        ]
     }
 }
